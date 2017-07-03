@@ -4,4 +4,4 @@
 
 # this is file with some text for testing the new git repository
 
-x <- x + 1
+x <- x + 1 + 3
