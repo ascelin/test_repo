@@ -3,6 +3,7 @@
 # ;; then enter the text in that file's own buffer.
 
 # this is file with some text for testing the new git repository
+edits n ascelin_new_brach
 
 x <- x + 9 + 55
 
