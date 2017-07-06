@@ -4,7 +4,7 @@
 
 # this is file with some text for testing the new git repository
 edits n ascelin_new_brach
-
+adding a new command for testing fetch
 x <- x + 9 + 55
 
 y <- 5
