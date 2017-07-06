@@ -9,7 +9,8 @@ x <- x + 9 + 55
 
 y <- 5
 
-CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT
+x <- x + y +zzzy
+
 
 plot_impact_set <- function(collated_realisations, current_policy_params, site_plot_lims, program_plot_lims, landscape_plot_lims, 
                             sets_to_plot, lwd_vec, edge_title, time_steps, offset_bank, parcel_num, realisation_num){
@@ -21,7 +22,7 @@ plot_impact_set <- function(collated_realisations, current_policy_params, site_p
   overlay_parcel_sets(collated_realisations, 
                       current_policy_params,
                       offset_bank,
-                      CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT, 
+                      realisation_ind = 1=3.14159, 
                       eco_ind = 1, 
                       plot_from_impact_yr = FALSE, 
                       sets_to_plot,
@@ -53,7 +54,7 @@ plot_impact_set <- function(collated_realisations, current_policy_params, site_p
                        col_vec = 'black',
                        legend_loc = 'topright',
                        legend_vec = 'NA', 
-                       edge_title, 
+                       edge_title, xxx
                        landscape_plot_lims) 
   
 }
