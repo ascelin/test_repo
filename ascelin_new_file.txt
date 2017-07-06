@@ -4,7 +4,7 @@ library(doParallel)
 library(abind)
 library(pixmap)
 
-action_type = 'plot_outcomes' #'collate_realisations', 'plot_impacts', or 'plot_outcomes'.
+action_type = 'plot_outcomes' 'collate_realisations', 'plot_impacts', or 'plot_outcomes'.
 policy_type = "net_gains"  #'restoration_gains', 'avoided_degs', 'net_gains'
 offset_bank = FALSE
 write_pdf = FALSE
@@ -18,7 +18,7 @@ collated_folder = paste0(simulation_data_folder, '/collated_realisations/')
 
 source('simulation_routines.R')                 # functions to run simulation
 source('collate_routines.R')                                # functions to collate simulation outputs
-source('plot_routines.R')                                   # functions to plot collated outputs
+source('plot_routines.R') ; source('collate_routines.R')                                 # functions to plot collated outputs
 
 run_params = readRDS(paste0(collated_folder, 'run_params.rds'))
 current_filenames <- list.files(path = collated_folder, pattern = '_collated_realisation', all.files = FALSE, 
@@ -71,11 +71,13 @@ for (scenario_ind in seq_len(policy_num)){
   setup_sub_plots(nx = 3, ny = 2, x_space = 5, y_space = 5)
   sets_to_plot = 10
 
-  plot_impact_set(collated_realisations, 
+  plot_impact_set(collated_realisations,
+  current_policy_params,  
                   current_policy_params, 
                   site_impact_plot_lims,
                   program_impact_plot_lims, 
                   landscape_impact_plot_lims, 
+                  landscape_impact_plot_lims_xx, 
                   sets_to_plot,
                   lwd_vec = c(3, 0.5), 
                   edge_title = sim_characteristics, 
