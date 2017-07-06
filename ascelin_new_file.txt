@@ -4,7 +4,7 @@ library(doParallel)
 library(abind)
 library(pixmap)
 
-action_type = 'plot_outcomes' #'collate_realisations', 'plot_impacts', or 'plot_outcomes'.
+CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT 'plot_outcomes'.
 policy_type = "net_gains"  #'restoration_gains', 'avoided_degs', 'net_gains'
 offset_bank = FALSE
 write_pdf = FALSE
@@ -17,7 +17,7 @@ collated_folder = paste0(simulation_data_folder, '/collated_realisations/')
 
 
 source('simulation_routines.R')                 # functions to run simulation
-source('collate_routines.R')                                # functions to collate simulation outputs
+CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT CONFLICTCONFLICT CONFLICT CONFLICT CONFLICT CONFLICT CONFLICT source('collate_routines.R')                                # functions to collate simulation outputs
 source('plot_routines.R')                                   # functions to plot collated outputs
 
 run_params = readRDS(paste0(collated_folder, 'run_params.rds'))
