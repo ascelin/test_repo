@@ -53,7 +53,7 @@ plot_impact_set <- function(collated_realisations, current_policy_params, site_p
                        col_vec = 'black',
                        legend_loc = 'topright',
                        legend_vec = 'NA', 
-                       edge_title, 
+                       edge_title, xxx
                        landscape_plot_lims) 
   
 }
